@@ -1,0 +1,16 @@
+spring:
+  cloud:
+    config:
+      server:
+        svn:
+          uri: https://192.169.1.81/svn/cmmi/04javaemp/01dev/05code/emp_branches/empplatform_1.0_m_linux/emp-demo/emp-platform-demo/
+          username: ***
+          password: ***
+          default-label: config
+  profiles:
+    active: subversion
+
+  application:
+    name: spring-cloud-config-server
+server:
+  port: 9090

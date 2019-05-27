@@ -1,0 +1,12 @@
+
+#在svn仓库中目录 配置文件的目录/配置文件前缀-配置文件后缀.配置文件类型
+#如在svn仓库目录下的ming/app-dev.yaml
+#那么 ming就是label app就是name profiles就是dev path就是app-dev.yaml
+
+spring:
+  cloud:
+    config:
+      label: config
+      uri: http://localhost:9090
+      name: config
+      profile: dev
